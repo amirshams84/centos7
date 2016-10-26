@@ -25,6 +25,6 @@ RUN yum install -y epel-release ; \
                    readline-devel \
                    sqlite-devel \
                    tk-devel \
-                   zlib-devel ; \
-                   
+                   zlib-devel \
+                   mc ; \
     yum update  -y ; \
