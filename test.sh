@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# docker run -i bigr.bios.cf.ac.uk:4567/genomics/centos7 bash < tests.sh
+# docker run -i amirshams/centos7:1.0 bash < test.sh
 #
 
 # test ############
