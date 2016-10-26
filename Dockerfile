@@ -20,6 +20,7 @@ RUN yum install -y epel-release ; \
                    which \
                    wget \
                    tar \
+                   unzip \
                    bzip2-devel \
                    openssl-devel \
                    readline-devel \
