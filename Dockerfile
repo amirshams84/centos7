@@ -28,7 +28,9 @@ RUN yum install -y epel-release ; \
                    tk-devel \
                    zlib-devel \
                    mc ; \
-    yum update  -y ; \
+    yum update  -y ;
+
+CMD ["/bin/bash"]
 
 ##############################################################
 # Software:             python2
