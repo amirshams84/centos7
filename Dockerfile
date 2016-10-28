@@ -9,26 +9,35 @@ MAINTAINER Amir Shams <amir.shams84@gmail.com>
 # Description:          Centos7 with gcc/g++/make/git/wget/tar/unzip/bzip2/openssl/readline/sqlite/tk/zlib/mc
 ##############################################################
 
+RUN yum -y update && yum clean all ;
 RUN yum install -y epel-release ; \
     yum install -y ansible \
-                   git     \
-                   gcc     \
+                   git \
+                   gcc \
                    gcc-c++ \ 
-                   make    \
+                   make \
                    net-tools \
                    sudo \
                    which \
                    wget \
+                   file \
+                   patch \
+                   libtool \
+                   texinfo \
                    tar \
                    unzip \
+                   bzip2 \
                    bzip2-devel \
+                   openssl \
                    openssl-devel \
+                   readline \
                    readline-devel \
                    sqlite-devel \
                    tk-devel \
+                   zlib \
                    zlib-devel \
-                   mc ; \
-    yum update  -y ;
+                   ncurses-devel \
+                   mc ;
 
 CMD ["/bin/bash"]
 
