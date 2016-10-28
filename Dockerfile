@@ -39,6 +39,7 @@ RUN yum install -y epel-release ; \
                    ncurses-devel \
                    mc ;
 
+RUN yum -y update && yum clean all ;
 CMD ["/bin/bash"]
 
 ##############################################################
