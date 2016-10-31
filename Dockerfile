@@ -37,7 +37,8 @@ RUN yum install -y epel-release ; \
                    zlib \
                    zlib-devel \
                    ncurses-devel \
-                   mc ;
+                   mc \
+                   nginx ;
 
 RUN yum -y update && yum clean all ;
 CMD ["/bin/bash"]
