@@ -37,8 +37,7 @@ RUN yum install -y epel-release ; \
                    zlib \
                    zlib-devel \
                    ncurses-devel \
-                   mc \
-                   nginx ;
+                   mc ;
 
 RUN yum -y update && yum clean all ;
 CMD ["/bin/bash"]
@@ -67,5 +66,7 @@ RUN curl -L -o Python-$VERSION.tgz https://www.python.org/ftp/python/$VERSION/Py
     rm -rf Python-$VERSION* ; \
     python -m ensurepip --upgrade ; \
     pip install --upgrade pip
+
+RUN yum install -y nginx 
 
 CMD ["/bin/bash"]
