@@ -70,3 +70,16 @@ RUN curl -L -o Python-$VERSION.tgz https://www.python.org/ftp/python/$VERSION/Py
 RUN yum install -y nginx 
 
 CMD ["/bin/bash"]
+
+##############################################################
+# Software:             nginx
+# Software Version:     1.10.0
+# Software Website:     -
+# Description:          -
+##############################################################
+RUN rpm -iv http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.10.0-1.el7.ngx.x86_64.rpm
+
+EXPOSE 80 443
+
+VOLUME /usr/share/nginx/html
+CMD ["nginx"]
