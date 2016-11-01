@@ -67,8 +67,6 @@ RUN curl -L -o Python-$VERSION.tgz https://www.python.org/ftp/python/$VERSION/Py
     python -m ensurepip --upgrade ; \
     pip install --upgrade pip
 
-RUN yum install -y nginx 
-
 CMD ["/bin/bash"]
 
 ##############################################################
