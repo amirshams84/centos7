@@ -67,7 +67,15 @@ RUN curl -L -o Python-$VERSION.tgz https://www.python.org/ftp/python/$VERSION/Py
     pip install --upgrade pip
 
 CMD ["/bin/bash"]
-
+##############################################################
+# Software:             PYTHON LIBRARY
+# Software Version:     1.10.0
+# Software Website:     -
+# Description:          -
+##############################################################
+pip install plotly
+pip install numpy
+pip install scipy
 ##############################################################
 # Software:             nginx
 # Software Version:     1.10.0
