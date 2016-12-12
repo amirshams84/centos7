@@ -37,6 +37,7 @@ RUN yum install -y epel-release ; \
                    zlib \
                    zlib-devel \
                    ncurses-devel \
+                   python-pip \
                    mc ;
 
 CMD ["/bin/bash"]
