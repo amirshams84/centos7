@@ -65,10 +65,7 @@ RUN curl -L -o Python-$VERSION.tgz https://www.python.org/ftp/python/$VERSION/Py
     cd ../ ;  \
     rm -rf Python-$VERSION* ; \
     python -m ensurepip --upgrade ; \
-    pip install --upgrade pip ; \
-    pip install numpy ; \
-    pip install scipy ; \
-    pip install plotly
+    pip install --upgrade pip ;
 
 CMD ["/bin/bash"]
 
