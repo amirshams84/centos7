@@ -25,6 +25,7 @@ RUN yum install -y epel-release ; \
                    libtool \
                    texinfo \
                    tar \
+                   zip \
                    unzip \
                    bzip2 \
                    bzip2-devel \
