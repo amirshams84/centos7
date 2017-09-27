@@ -16,5 +16,4 @@ RUN yum install -y ansible git gcc gcc-c++ make net-tools sudo which wget file p
 RUN yum clean all ;
 ##############################################################
 
-CMD ["/bin/bash"]
 
