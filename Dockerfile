@@ -6,7 +6,7 @@ MAINTAINER Amir Shams <amir.shams84@gmail.com>
 # Software:             centos7
 # Software Version:     7.0
 # Software Website:     https://www.centos.org/
-# Description:          Centos7 with gcc/g++/make/git/wget/tar/unzip/bzip2/openssl/readline/sqlite/tk/zlib/mc
+# Description:          Centos7 with ansible git gcc gcc-c++ make net-tools sudo which wget file patch libtool texinfo tar unzip bzip2 bzip2-devel
 ##############################################################
 
 RUN yum -y update ;
